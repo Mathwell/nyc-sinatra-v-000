@@ -1,0 +1,5 @@
+<label >Landmarks</label><br><br>
+<% @landmarks.each do |landmark|%>
+  Name:<label><%=landmark.name%></label><br><br>
+  Year: <label ><%=landmark.year_completed%></label>
+  <%end%>

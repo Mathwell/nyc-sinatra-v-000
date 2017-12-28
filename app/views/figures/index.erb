@@ -1,0 +1,8 @@
+<label >Figures</label><br><br>
+<% Figure.all.each do |figure|%>
+  Name:<label><%=figure.name%></label><br><br>
+  <%figure.titles.each do |title|%>
+        <li><%=title.name%></li>
+        <%end%>
+      </ul>
+<%end%>
